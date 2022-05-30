@@ -1,0 +1,13 @@
+@import "base/reset";
+@import "base/color";
+@import "base/root";
+@import "base/mixin";
+
+.header {
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 17rem 0;
+}
