@@ -368,4 +368,146 @@
 }
 
 .package {
+  width: 100%;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem 0;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem 0;
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 5.2rem;
+    letter-spacing: -2%;
+    color: #05101f;
+  }
+
+  &__subtitle {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #52575f;
+    max-width: 50.7rem;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.8rem 0;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 3rem;
+  }
+
+  &__item {
+    box-shadow: 0 16px 32px 0 #0000000d;
+    border-radius: 3rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: 32rem;
+    border-top: 3rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    padding: 2.8rem 2.2rem 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  &__rating {
+    margin-top: 0.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0 0.6rem;
+
+    svg {
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+
+    p {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      color: #fea31b;
+    }
+  }
+
+  &__btn {
+    margin-top: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__price {
+    font-family: "Poppins", sans-serif;
+    line-height: 2.6rem;
+    &-from {
+      font-weight: 400;
+      color: #52575f;
+    }
+
+    &-content {
+      font-weight: 600;
+      color: black;
+    }
+  }
+
+  &__buy {
+    padding: 0.5rem 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: white;
+
+    background-color: #3685fb;
+    border-radius: 1.8rem;
+  }
+
+  &__more {
+    width: 18rem;
+    height: 6.4rem;
+    padding: 1.7rem 5.3rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 3rem;
+
+    margin: 0 auto;
+
+    color: white;
+    border-radius: 3.2rem;
+    background-color: #3685fb;
+  }
 }

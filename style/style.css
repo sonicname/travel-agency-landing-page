@@ -145,6 +145,7 @@ html {
   font-family: "Sen", sans-serif;
   font-size: 62.5%;
   font-style: normal;
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -477,6 +478,130 @@ a {
   font-size: 1.6rem;
   line-height: 2.8rem;
   color: white;
+}
+
+.package {
+  width: 100%;
+}
+.package__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5.5rem 0;
+}
+.package__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem 0;
+  text-align: center;
+}
+.package__title {
+  font-weight: 700;
+  font-size: 4.2rem;
+  line-height: 5.2rem;
+  letter-spacing: -2%;
+  color: #05101f;
+}
+.package__subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #52575f;
+  max-width: 50.7rem;
+  margin: 0 auto;
+}
+.package__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.8rem 0;
+}
+.package__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 3rem;
+}
+.package__item {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.0509803922);
+  border-radius: 3rem;
+}
+.package__img {
+  width: 100%;
+  height: 32rem;
+  border-top: 3rem;
+}
+.package__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.package__info {
+  padding: 2.8rem 2.2rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.package__name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+.package__rating {
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0 0.6rem;
+}
+.package__rating svg {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.package__rating p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #fea31b;
+}
+.package__btn {
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.package__price {
+  font-family: "Poppins", sans-serif;
+  line-height: 2.6rem;
+}
+.package__price-from {
+  font-weight: 400;
+  color: #52575f;
+}
+.package__price-content {
+  font-weight: 600;
+  color: black;
+}
+.package__buy {
+  padding: 0.5rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  color: white;
+  background-color: #3685fb;
+  border-radius: 1.8rem;
+}
+.package__more {
+  width: 18rem;
+  height: 6.4rem;
+  padding: 1.7rem 5.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  margin: 0 auto;
+  color: white;
+  border-radius: 3.2rem;
+  background-color: #3685fb;
 }
 
 /*# sourceMappingURL=style.css.map */
