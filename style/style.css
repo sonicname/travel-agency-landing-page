@@ -150,6 +150,8 @@ html {
 body {
   min-height: 100vh;
   font-size: 1.6rem;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .container {
@@ -260,6 +262,112 @@ a {
   line-height: 2.8rem;
   background: #3685fb;
   border-radius: 2.4rem;
+}
+
+.hero {
+  margin-top: 6.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0 13rem;
+}
+.hero__img {
+  min-width: 57rem;
+  height: 60rem;
+  width: 100%;
+}
+.hero__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+}
+.hero__heading {
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  font-size: 6.2rem;
+  line-height: 7.2rem;
+  color: #05101f;
+  letter-spacing: -2%;
+}
+.hero__heading-top {
+  color: #14b8a7;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+.hero__smile {
+  display: inline-block;
+  width: 4.8rem;
+  height: 4.8rem;
+}
+.hero__smile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero__subheading {
+  margin-top: 2.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #52575f;
+}
+.hero__btn {
+  margin-top: 3.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0 2.6rem;
+}
+.hero__plan {
+  padding: 1.7rem 4.2rem;
+  min-width: 18rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  background-color: #3685fb;
+  color: white;
+  border-radius: 3.2rem;
+}
+.hero__watch {
+  display: flex;
+  align-items: center;
+  gap: 0 3.6rem;
+}
+.hero__watch-btn {
+  position: relative;
+}
+.hero__watch-img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+}
+.hero__watch-play {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4rem;
+  height: 4rem;
+  right: -25%;
+  padding: 1.4rem;
+  background-color: white;
+  border-radius: 100rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__watch-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  min-width: 14.8rem;
 }
 
 .main {
