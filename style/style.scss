@@ -373,9 +373,11 @@
     display: flex;
     flex-direction: column;
     gap: 5.5rem 0;
+    padding-bottom: 9.6rem;
   }
 
   &__header {
+    margin-top: 9.6rem;
     display: flex;
     flex-direction: column;
     gap: 1.6rem 0;
@@ -509,5 +511,64 @@
     color: white;
     border-radius: 3.2rem;
     background-color: #3685fb;
+  }
+}
+
+.gallery {
+  width: 100%;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 13rem;
+  }
+
+  &__img {
+    max-width: 57rem;
+    max-height: 55.4rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 5.2rem;
+    letter-spacing: -2%;
+    color: #05101f;
+  }
+
+  &__subtitle {
+    margin-top: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #52575f;
+  }
+
+  &__btn {
+    width: 18rem;
+    height: 6.4rem;
+    margin-top: 3.8rem;
+    padding: 1.7rem 5.3rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    color: white;
+
+    background-color: #3685fb;
+    border-radius: 3.2rem;
   }
 }
