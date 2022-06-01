@@ -1,0 +1,116 @@
+.footer {
+  background: #0e2241;
+
+  &__container {
+    padding-top: 9.6rem;
+    padding-bottom: 2.8rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem 0;
+  }
+
+  &__logo {
+    width: 10.9rem;
+    height: 3.4rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__subtitle {
+    max-width: 26.7rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: #a3a8b1;
+  }
+
+  &__social {
+    display: flex;
+    gap: 0 1.8rem;
+    align-items: center;
+
+    &-item {
+      width: 1.5rem;
+      height: 1.5rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__right {
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 5rem;
+  }
+
+  &__item {
+    max-width: 20rem;
+    &-title {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      color: white;
+    }
+
+    &-line {
+      margin-top: 1.4rem;
+      display: block;
+      max-width: 13rem;
+      height: 0.1rem;
+      background-color: #394659;
+    }
+
+    &-wrapper {
+      margin-top: 2.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem 0;
+    }
+
+    &-subtitle {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 2.8rem;
+      color: #a3a8b1;
+    }
+  }
+
+  &__bottom {
+    margin-top: 3.8rem;
+    padding-top: 2.8rem;
+    border-top: 1px solid #394659;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__copyright {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: #878e99;
+  }
+}

@@ -1,0 +1,115 @@
+.destination {
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem 0;
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem 0;
+  }
+
+  &__title {
+    font-family: "Sen", sans-serif;
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 5.2rem;
+    letter-spacing: -2%;
+  }
+
+  &__subtitle {
+    max-width: 50.7rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #52575f;
+  }
+
+  &__btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 0 1.8rem;
+    bottom: 0;
+    right: 0;
+
+    &-back {
+      width: 4.4rem;
+      height: 4.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.4rem 1.7rem;
+      border-radius: 100rem;
+      border: 1px solid #3685fb;
+    }
+
+    &-next {
+      width: 4.4rem;
+      height: 4.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.4rem 1.7rem;
+      border-radius: 100rem;
+      background-color: #3685fb;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 3rem;
+  }
+
+  &__card {
+    position: relative;
+    border-radius: 3rem;
+
+    &:hover .destination__info {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__info {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 1.6rem;
+    left: 1.6rem;
+    right: 1.6rem;
+    padding: 1.8rem 3.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem 0;
+    text-align: center;
+    background: rgba(5, 16, 31, 0.15);
+    backdrop-filter: blur(30px);
+    border-radius: 12px;
+
+    transition: all 0.2s linear;
+  }
+
+  &__name {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #eff3ff;
+  }
+
+  &__location {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: white;
+  }
+}
