@@ -39,7 +39,7 @@
     bottom: 0;
     right: 0;
 
-    &-back {
+    &-btn {
       width: 4.4rem;
       height: 4.4rem;
       display: flex;
@@ -48,17 +48,15 @@
       padding: 1.4rem 1.7rem;
       border-radius: 100rem;
       border: 1px solid #3685fb;
-    }
+      transition: all 0.2s linear;
 
-    &-next {
-      width: 4.4rem;
-      height: 4.4rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1.4rem 1.7rem;
-      border-radius: 100rem;
-      background-color: #3685fb;
+      &:hover {
+        background: #3685fb;
+
+        svg path {
+          stroke: white;
+        }
+      }
     }
   }
 

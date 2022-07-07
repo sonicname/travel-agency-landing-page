@@ -55,11 +55,15 @@
       padding-right: 2rem;
       outline: none;
 
-      color: #a9afb9;
+      color: black;
       font-family: "Poppins", sans-serif;
       font-size: 1.4rem;
       font-weight: 500;
       line-height: 2.6rem;
+
+      &::placeholder {
+        color: #a9afb9;
+      }
     }
   }
 
@@ -67,25 +71,6 @@
     display: flex;
     align-items: center;
     gap: 0 4rem;
-
-    .active {
-      a {
-        color: #3685fb;
-        font-weight: 600;
-        position: relative;
-
-        &::after {
-          content: "";
-          position: absolute;
-          background-color: #3685fb;
-          display: block;
-          width: 1.2rem;
-          height: 0.2rem;
-          top: 110%;
-          border-radius: 0.1rem;
-        }
-      }
-    }
   }
 
   &__link {
@@ -95,6 +80,31 @@
       font-size: 1.6rem;
       line-height: 2.8rem;
       color: #52575f;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: #3685fb;
+        display: block;
+        width: 1.2rem;
+        height: 0.2rem;
+        top: 110%;
+        border-radius: 0.1rem;
+        opacity: 0;
+
+        transition: all 0.2s linear;
+      }
+    }
+
+    &:hover {
+      a {
+        color: #3685fb;
+
+        &::after {
+          opacity: 1;
+        }
+      }
     }
   }
 

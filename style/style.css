@@ -222,23 +222,29 @@ a {
   padding-left: 5rem;
   padding-right: 2rem;
   outline: none;
-  color: #a9afb9;
+  color: black;
   font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 2.6rem;
+}
+.navbar__search-input::placeholder {
+  color: #a9afb9;
 }
 .navbar__links {
   display: flex;
   align-items: center;
   gap: 0 4rem;
 }
-.navbar__links .active a {
-  color: #3685fb;
-  font-weight: 600;
+.navbar__link a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #52575f;
   position: relative;
 }
-.navbar__links .active a::after {
+.navbar__link a::after {
   content: "";
   position: absolute;
   background-color: #3685fb;
@@ -247,13 +253,14 @@ a {
   height: 0.2rem;
   top: 110%;
   border-radius: 0.1rem;
+  opacity: 0;
+  transition: all 0.2s linear;
 }
-.navbar__link a {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.8rem;
-  color: #52575f;
+.navbar__link:hover a {
+  color: #3685fb;
+}
+.navbar__link:hover a::after {
+  opacity: 1;
 }
 .navbar__btn {
   padding: 1.1rem 2.7rem;
@@ -415,7 +422,7 @@ a {
   bottom: 0;
   right: 0;
 }
-.destination__btn-back {
+.destination__btn-btn {
   width: 4.4rem;
   height: 4.4rem;
   display: flex;
@@ -424,16 +431,13 @@ a {
   padding: 1.4rem 1.7rem;
   border-radius: 100rem;
   border: 1px solid #3685fb;
+  transition: all 0.2s linear;
 }
-.destination__btn-next {
-  width: 4.4rem;
-  height: 4.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.4rem 1.7rem;
-  border-radius: 100rem;
-  background-color: #3685fb;
+.destination__btn-btn:hover {
+  background: #3685fb;
+}
+.destination__btn-btn:hover svg path {
+  stroke: white;
 }
 .destination__list {
   display: grid;
