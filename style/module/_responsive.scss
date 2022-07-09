@@ -1,3 +1,167 @@
 @media screen and (max-width: 766px) {
   // TODO
+  .navbar {
+    position: relative;
+
+    &__hamburger {
+      display: block;
+      height: 30px;
+      width: 30px;
+      cursor: pointer;
+    }
+
+    &__overlay {
+      &.active {
+        display: block;
+      }
+    }
+    
+    &__search {
+      display: none;
+    }
+
+    &__btn {
+      z-index: 10;
+    }
+
+    &__right {
+      z-index: 10;
+      padding-top: 10px;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      right: -130%;
+      top: 100%;
+      width: 100%;
+      gap: 10px 0;
+      transition: all 0.2s linear;
+
+      &.active {
+        right: 0;
+      }
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px 0;
+    }
+
+    &__link a {
+      color: white;
+    }
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__content {
+      text-align: center;
+    }
+
+    &__heading {
+      font-size: 40px;
+    }
+
+    &__smile {
+      display: none;
+      width: 30px;
+      height: 30px;
+    }
+
+    &__btn {
+      display: flex;
+      flex-direction: column;
+      gap: 20px 0;
+
+      font-size: 14px;
+    }
+
+    &__watch {
+      display: none;
+      // TODO
+    }
+  }
+
+  .destination {
+    &__container {
+      display: flex;
+      flex-direction: column;
+
+      text-align: center;
+    }
+
+    &__btn {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px 0;
+    }
+  }
+
+  .package {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px 0;
+    }
+  }
+
+  .gallery {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px 0;
+    }
+
+    &__content {
+      text-align: center;
+    }
+
+    &__btn {
+      width: 100%;
+    }
+  }
+
+  .subscribe {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px 0;
+    }
+
+    &__email {
+      width: 100%;
+    }
+  }
+
+  .footer {
+    &__container {
+      padding: 20px;
+    }
+    &__wrapper {
+      display: none;
+    }
+
+    &__bottom {
+      margin-top: 0;
+      padding: 0;
+      text-align: center;
+      border: none;
+    }
+  }
 }

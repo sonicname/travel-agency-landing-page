@@ -5,8 +5,7 @@
   gap: 0 13rem;
 
   &__img {
-    min-width: 57rem;
-    height: 60rem;
+    max-width: 57rem;
     width: 100%;
 
     img {
@@ -19,6 +18,7 @@
   &__content {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   &__heading {
